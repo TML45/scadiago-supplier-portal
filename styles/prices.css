@@ -48,7 +48,7 @@ main {
   flex: 1;
 }
 
-.clientes {
+.solicitacoesDeCompras {
   width: 100%;
   margin: 0 auto;
 }
@@ -63,7 +63,7 @@ main {
   margin-bottom: 20px;
 }
 
-.tabela-clientes {
+.tabela-solicitacoes {
   width: 100%;
   border-collapse: collapse;
 }
