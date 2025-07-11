@@ -28,8 +28,29 @@ header h1 {
   font-weight: normal;
 }
 
+.profile .icon {
+  font-size: 24px;
+}
+
+.profile-button,
+.logout-button {
+  background: white;
+  border: none;
+  color: #d62849;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
 main {
   padding: 40px;
+  flex: 1;
+}
+
+.clientes {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .clientes h2 {
@@ -44,7 +65,6 @@ main {
 
 .tabela-clientes {
   width: 100%;
-  max-width: 800px;
   border-collapse: collapse;
 }
 
@@ -56,6 +76,7 @@ main {
 }
 
 .container {
+  width: 100%;
   display: flex;
   justify-content: center;
   padding-top: 50px;
