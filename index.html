@@ -14,6 +14,9 @@
       <div class="left">
         <img src="/imgs/img-pr+fornec.png" alt="Campo" class="background-image" />
         <div class="background-overlay"></div>
+        <div class="logo-container">
+          <img src="/imgs/img-logo_scadiagro.png" alt="Logo SCADIAgro" class="logo-color" />
+        </div>
         <div class="bemvindo-message">
           <h1>Seja bem-vindo ao</h1>
           <h1>Portal Fornecedor SCADIAgro!</h1>
@@ -46,7 +49,8 @@
               required
             />
 
-            <button type="submit" class="btn-login">Entrar</button>
+            <button type="submit" class="btn-login"><a class="btn-login" href="/pages/customers.html">Entrar</a></button>
+            <button type="submit" class="btn-voltar"><a class="btn-voltar" href="#">Voltar</a></button>
 
             <div class="btn-links">
               <a href="/pages/register.html">Cadastre-se</a>
@@ -54,16 +58,12 @@
             </div>
           </form>
         </div>
-        <footer> <a href="#">Termos e Condições</a> <a href="#">Política de Privacidade</a></footer>
+        <footer>
+          <a href="#">Termos e Condições</a>
+          <a href="#">Política de Privacidade</a>
+          <a id="dev">&copy; Desenvolvido por: 7Group | Todos os direitos reservados.</a>
+        </footer>
       </div>
     </div>
-    <script>
-      document
-        .querySelector(".btn-login")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          window.location.href = "/pages/customers.html";
-        });
-    </script>
   </body>
 </html>

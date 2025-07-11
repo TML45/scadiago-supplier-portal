@@ -30,6 +30,8 @@ header .icon img {
   flex: 1;
   background-color: #39B449;
   position: relative;
+  display: flex;
+  justify-content: space-around;
 }
 
 .background-image {
@@ -50,6 +52,14 @@ header .icon img {
   opacity: 0.8;
   z-index: 2;
   pointer-events: none;
+}
+
+.logo-container {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  height: 15%;
+  margin-top: 240px;
 }
 
 .bemvindo-message {
@@ -122,10 +132,27 @@ header .icon img {
   border-radius: 5px;
   font-size: 1.1rem;
   cursor: pointer;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .btn-login:hover {
-  background-color: #39B449;
+  opacity: 0.9;
+}
+
+.btn-voltar {
+  padding: 10px;
+  background-color: #403f41;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-voltar:hover {
+  opacity: 0.9;
 }
 
 .btn-links {
@@ -140,24 +167,11 @@ header .icon img {
   color: #2c9a2b;
   text-decoration: none;
   margin-top: 10px;
+  width: 40%;
 }
 
 .btn-links a:hover {
   text-decoration: underline;
-}
-
-.btn-corporate-login {
-  padding: 10px;
-  background-color: #ddd;
-  color: black;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-
-.btn-corporate-login:hover {
-  background-color: #bbb;
 }
 
 footer {
@@ -179,4 +193,10 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+#dev {
+  font-size: 0.9rem;
+  color: #39B449;
+  text-decoration: none;
+  margin-left: 20px;
 }
