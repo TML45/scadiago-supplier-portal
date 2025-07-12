@@ -107,4 +107,5 @@ main {
 .linha:hover {
   background-color: #39B54A;
   color: white;
+  border: none;
 }
