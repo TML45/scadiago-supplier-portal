@@ -157,9 +157,11 @@ header .icon img {
 
 .btn-links {
   display: flex;
-  justify-content: space-between;
+  text-align: left;
+  align-items: left;
   margin-bottom: 10px;
   flex-direction: column;
+  width: auto;
 }
 
 .btn-links a {
@@ -167,7 +169,6 @@ header .icon img {
   color: #2c9a2b;
   text-decoration: none;
   margin-top: 10px;
-  width: 40%;
 }
 
 .btn-links a:hover {
