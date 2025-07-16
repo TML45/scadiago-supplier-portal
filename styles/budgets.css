@@ -109,3 +109,20 @@ main {
   color: white;
   border: none;
 }
+
+.btn-voltar {
+  padding: 10px;
+  background-color: #403f41;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-decoration: none;
+  width: 30vh;
+  margin: 250px 230px;
+}
+
+.btn-voltar:hover {
+  opacity: 0.9;
+}
