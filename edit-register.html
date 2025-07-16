@@ -4,80 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portal Fornecedor SCADIAgro</title>
-    <link rel="stylesheet" href="styles/prices.css" />
+    <link rel="icon" href="imgs/img-logo_icon.png" />
+    <link rel="stylesheet" href="styles/edit-register.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
     <header>
       <div class="logo"><img src="imgs/img-logo_scadiagro_all-white.png" alt="Logo SCADIAgro" /></div>
       <h1>Portal Fornecedor SCADIAgro - Usuário: Fornecedor do Usuário </h1>
-      <div class="profile">
-        <div class="icon">👤</div>
-        <button class="profile-button">Perfil</button>
-        <button class="logout-button">Logout</button>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" id="profile-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-person-circle" id="profile-icon"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="edit-register.html">Perfil</a></li>
+          <li><a class="dropdown-item" id="logout" href="index.html">Sair</a></li>
+        </ul>
       </div>
     </header>
 
     <div class="container">
       <main>
-        <section class="solicitacoesDeCompras">
-          <h2>SOLICITAÇÃO DE COMPRA</h2>
-          <p>Preencha o preço de cada produto com desconto e validade de preço (não obrigatório) Se não houver o produto para fornecer marque o box na coluna sem estoque</p>
-          <p>Compra de peças para colheitadeira john deere revisão pré-safra 25/26 de mlho e soja da fazenda do Lorem ipsum dolor sit amet. Qui laboriosam illo vel culpa nulla aut suscipit </p>
-          <p>Proprietário: João da Silva | IE: 12345678-9 | Comprador: João da Silva</p>
+        <section class="editRegister">
+          <h2>Cadastro de Fornecedor</h2>
+          <p>Altere seu Cadastro</p>
 
-          <!-- Forma de ilustração da lista de clientes -->
+          <form>
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
 
-          <div class="tabela-solicitacoes">
-            <div class="tabela-header">
-              <span>Qtd</span>
-              <span>Produto</span>
-              <span>Valor unitário</span>
-              <span>Desconto</span>
-              <span>Valor Total</span>
-              <span>Validade do Preço</span>
-              <span>Sem Estoque</span>
-            </div>
+            <label for="senha">Senha</label>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Senha"
+            />
 
-            <a class="linha">
-              <span>10</span>
-              <span>Parafuso da rosqueta quadrada traseira</span>
-              <span>R$ _____ , ___</span>
-              <span>____%</span>
-              <span>#FORMULA</span>
-              <span>___/___/_______</span>
-              <span>N</span>
-            </a>
-            <a class="linha">
-              <span>03</span>
-              <span>Filtro de ar do motor</span>
-              <span>Parafuso da rosqueta quadrada traseira</span>
-              <span>R$ _____ , ___</span>
-              <span>____%</span>
-              <span>#FORMULA</span>
-              <span>___/___/_______</span>
-              <span>N</span>
-            </a>
-            <a class="linha">
-              <span>10</span>
-              <span>Parafuso da rosqueta quadrada traseira</span>
-              <span>R$ _____ , ___</span>
-              <span>____%</span>
-              <span>#FORMULA</span>
-              <span>___/___/_______</span>
-              <span>N</span>
-            </a>
-            <a class="linha">
-              <span>10</span>
-              <span>Parafuso da rosqueta quadrada traseira</span>
-              <span>R$ _____ , ___</span>
-              <span>____%</span>
-              <span>#FORMULA</span>
-              <span>___/___/_______</span>
-              <span>N</span>
-            </a>
-          </div>
+            <label for="senha">Confirmar Senha</label>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Senha"
+            />
+
+            <button type="submit" class="btn-login">Cadastrar</button>
+            <button type="button" class="btn-voltar" onclick="window.location.href='register.html'">Voltar</button>
+          </form>
         </section>
       </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.esm.min.js"
+      }
+    }
+    </script>
+    <script type="module">
+      import * as bootstrap from 'bootstrap'
+      new bootstrap.Popover(document.getElementById('popoverButton'))
+    </script>
   </body>
 </html>
