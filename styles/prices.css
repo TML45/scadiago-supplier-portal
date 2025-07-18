@@ -119,10 +119,57 @@ main {
   font-size: 1.1rem;
   cursor: pointer;
   text-decoration: none;
-  width: 30vh;
-  margin: 250px 230px;
+  margin-bottom: 10px;
 }
 
 .btn-voltar:hover {
+  opacity: 0.9;
+}
+
+.btn-login {
+  padding: 10px;
+  background-color: #39B449;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.btn-login:hover {
+  opacity: 0.9;
+}
+
+.btn-limpar {
+  padding: 10px;
+  background-color: #DB1D3F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.btn-limpar:hover {
+  opacity: 0.9;
+}
+
+.btn-alterar {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.btn-alterar:hover {
   opacity: 0.9;
 }
