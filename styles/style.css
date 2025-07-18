@@ -182,6 +182,7 @@ footer {
   right: 0;
   bottom: 10px;
   text-align: left; 
+  display: flex;
 }
 
 footer a {
