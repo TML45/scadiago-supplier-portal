@@ -151,3 +151,19 @@ main {
 .btn-voltar:hover {
   opacity: 0.9;
 }
+
+.btn-alterar {
+  padding: 10px;
+  background-color: #DB1D3F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.btn-alterar:hover {
+  opacity: 0.9;
+}
