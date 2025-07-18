@@ -22,34 +22,25 @@
       </div>
       <div class="direita">
         <div class="login-form">
-          <h2>Cadastrar</h2>
+          <h2>Cadastre-se</h2>
           <form>
-            <label for="nome">Nome</label>
-            <input
-              type="name"
-              id="name"
-              name="name"
-              placeholder="Nome"
-              required
-            />
+            <label for="razaoSocial">Razão Social</label>
+            <input type="text" id="razaoSocial" name="razaoSocial" placeholder="Razão Social">
+
+            <label for="nomeFantasia">Nome Fantasia</label>
+            <input type="text" id="nomeFantasia" name="nomeFantasia" placeholder="Nome Fantasia">
+
+            <label for="cnpj">CNPJ</label>
+            <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ">
 
             <label for="email">E-mail</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="E-mail"
-              required
-            />
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
 
-            <label for="senha">Senha</label>
-            <input
-              type="password"
-              id="senha"
-              name="senha"
-              placeholder="Senha"
-              required
-            />
+            <label for="telefone">Telefone/Celular</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Celular/Telefone">
+
+            <label for="token">Token</label>
+            <input type="text" id="token" name="token" placeholder="Token">
 
             <button type="submit" class="btn-login" onclick="window.location.href='password.html'" >Cadastrar</button>
             <button type="button" class="btn-voltar" onclick="window.location.href='index.html'">Voltar</button>
