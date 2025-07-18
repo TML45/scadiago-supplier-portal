@@ -28,7 +28,6 @@ header .icon img {
 
 .left {
   flex: 1;
-  background-color: #39B449;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -195,9 +194,78 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 #dev {
   font-size: 0.9rem;
   color: #39B449;
   text-decoration: none;
   margin-left: 20px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 390px) {
+  body, html {
+    height: 390px;
+  }
+
+  .background-image, .welcome { 
+    display: none;
+  }
+
+  .background-overlay {
+    background: #39B449;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+ .logo-container {
+    margin-top: 10px;
+    height: 5vh;
+    width: auto;
+    align-items: left;
+    margin-bottom: 0;
+    position: relative;
+    margin-left: 10px;
+
+  }
+
+  .bemvindo-message{
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    text-align: center;
+    margin: 20px auto;;
+  }
+
+  .bemvindo-message h1 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .direita {
+    margin-top: 100px;
+    padding: 20px;
+  }
+
+  .login-form {
+    width: 90%;
+    max-width: none;
+  }
+
+  footer {
+    margin-top: 210px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 10px;
+  }
+
+  footer a {
+    display: none;
+  }
+
 }
