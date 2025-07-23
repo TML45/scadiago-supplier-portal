@@ -53,7 +53,7 @@ header h1 {
 }
 
 main {
-  padding: 40px;
+  padding: 0 40px;
   flex: 1;
 }
 
@@ -63,7 +63,7 @@ main {
 }
 
 .clientes h2 {
-  font-size: 18px;
+  font-size: 1px;
   margin-bottom: 5px;
 }
 
@@ -99,7 +99,7 @@ main {
 
 .editRegister h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
 }
 
@@ -110,13 +110,13 @@ main {
 
 .editRegister label {
   margin-bottom: 5px;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .editRegister input {
   padding: 10px;
   margin-bottom: 20px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -146,6 +146,7 @@ main {
   font-size: 1.1rem;
   cursor: pointer;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 
 .btn-voltar:hover {
@@ -166,4 +167,64 @@ main {
 
 .btn-alterar:hover {
   opacity: 0.9;
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 390px) {
+  
+  body, html {
+    height: 390px;
+  }
+
+  header {
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 16px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  #profile-icon {
+    margin-right: 20px;
+  }
+
+  .dropdown-toggle::after {
+  position: absolute;
+  right: 20px;
+  top: 65%;
+  }
+
+  .container {
+    padding-top: 20px;
+  }
+
+  .editRegister h2 {
+    font-size: 1.2rem;
+  }
+
+  .editRegister p {
+    font-size: 0.8rem;
+  }
+
+  .editRegister {
+    font-size: 0.6rem;
+  }
+
+  .editRegister label, .editRegister input {
+    font-size: 0.7rem;
+  }
+
+  .btn-login, .btn-voltar, .btn-alterar {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
 }
