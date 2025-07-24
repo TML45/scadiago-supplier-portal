@@ -58,6 +58,7 @@ main {
 }
 
 .clientes {
+  padding-top: 50px;
   width: 100%;
   margin: 0 auto;
 }
@@ -82,13 +83,6 @@ main {
   justify-content: space-around;
   font-weight: bold;
   margin-bottom: 10px;
-}
-
-.container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
 }
 
 .linha {

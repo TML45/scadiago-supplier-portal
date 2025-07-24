@@ -24,72 +24,77 @@
       </div>
     </header>
 
-    <div class="container">
-      <main>
-        <section class="solicitacaoDeCompra">
-          <h2>SOLICITAÇÃO DE COMPRA</h2>
-          <p>Preencha o preço de cada produto com desconto e validade de preço (não obrigatório) Se não houver o produto para fornecer marque o box na coluna sem estoque</p>
-          <p>Compra de peças para colheitadeira john deere revisão pré-safra 25/26 de mlho e soja da fazenda do Lorem ipsum dolor sit amet. Qui laboriosam illo vel culpa nulla aut suscipit </p>
-          <p>Proprietário: João da Silva | IE: 12345678-9 | Comprador: João da Silva</p>
+    <main>
+      <section class="solicitacaoDeCompra">
+        <h2>SOLICITAÇÃO DE COMPRA</h2>
+        <p style="text-align: right; font-weight: bold;">004 - FAZENDA LOREM IPSUM</p>
+        <p>Preencha o preço de cada produto com desconto e validade de preço (não obrigatório) Se não houver o produto para fornecer marque o box na coluna sem estoque</p>
+        <p>Compra de peças para colheitadeira john deere revisão pré-safra 25/26 de mlho e soja da fazenda do Lorem ipsum dolor sit amet. Qui laboriosam illo vel culpa nulla aut suscipit </p>
+        <p>Proprietário: João da Silva | IE: 12345678-9 | Comprador: João da Silva</p>
 
-          <!-- Forma de ilustração da lista de clientes -->
+        <!-- Forma de ilustração da lista de clientes -->
 
-          <div class="tabela-solicitacao">
-            <div class="tabela-header">
-              <span>Qtd</span>
-              <span>Produto</span>
-              <span>Valor unitário</span>
-              <span>Desconto</span>
-              <span>Valor Total</span>
-              <span>Validade do Preço</span>
-              <span>Sem Estoque</span>
-            </div>
-
-            <a class="linha">
-              <span>10</span>
-              <span>Parafuso da rosqueta quadrada traseira</span>
-              <span>R$ _____ , ___</span>
-              <span>____%</span>
-              <span>#FORMULA</span>
-              <span>___/___/_______</span>
-              <span>N</span>
-            </a>
-            <a class="linha">
-              <span>03</span>
-              <span>Filtro de ar do motor</span>
-              <span>Parafuso da rosqueta quadrada traseira</span>
-              <span>R$ _____ , ___</span>
-              <span>____%</span>
-              <span>#FORMULA</span>
-              <span>___/___/_______</span>
-              <span>N</span>
-            </a>
-            <a class="linha">
-              <span>10</span>
-              <span>Parafuso da rosqueta quadrada traseira</span>
-              <span>R$ _____ , ___</span>
-              <span>____%</span>
-              <span>#FORMULA</span>
-              <span>___/___/_______</span>
-              <span>N</span>
-            </a>
-            <a class="linha">
-              <span>10</span>
-              <span>Parafuso da rosqueta quadrada traseira</span>
-              <span>R$ _____ , ___</span>
-              <span>____%</span>
-              <span>#FORMULA</span>
-              <span>___/___/_______</span>
-              <span>N</span>
-            </a>
+        <div class="tabela-solicitacao">
+          <div class="tabela-header">
+            <span>Qtd</span>
+            <span>Produto</span>
+            <span>Valor unitário</span>
+            <span>Desconto</span>
+            <span>Valor Total</span>
+            <span>Validade do Preço</span>
+            <span>Sem Estoque</span>
           </div>
-        </section>
-      </main>
+
+          <a class="linha">
+            <span>10</span>
+            <span>Parafuso da rosqueta quadrada traseira</span>
+            <span>R$ _____ , ___</span>
+            <span>____%</span>
+            <span>#FORMULA</span>
+            <span>___/___/_______</span>
+            <span><input type="checkbox" name="semEstoque[]"></span>
+          </a>
+          <a class="linha">
+            <span>03</span>
+            <span>Filtro de ar do motor</span>
+            <span>R$ _____ , ___</span>
+            <span>____%</span>
+            <span>#FORMULA</span>
+            <span>___/___/_______</span>
+            <span><input type="checkbox" name="semEstoque[]"></span>
+          </a>
+          <a class="linha">
+            <span>10</span>
+            <span>Parafuso da rosqueta quadrada traseira</span>
+            <span>R$ _____ , ___</span>
+            <span>____%</span>
+            <span>#FORMULA</span>
+            <span>___/___/_______</span>
+            <span><input type="checkbox" name="semEstoque[]"></span>
+          </a>
+          <a class="linha">
+            <span>10</span>
+            <span>Parafuso da rosqueta quadrada traseira</span>
+            <span>R$ _____ , ___</span>
+            <span>____%</span>
+            <span>#FORMULA</span>
+            <span>___/___/_______</span>
+            <span><input type="checkbox" name="semEstoque[]"></span>
+          </a>
+          <div style="margin-top: 20px;">
+            <label for="observacao" style="font-weight: bold;">Observação:</label><br>
+            <textarea id="observacao" name="observacao" rows="3" placeholder="Digite aqui alguma observação..." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <div class="botoes-rodape">
+      <button type="button" class="btn-voltar" onclick="window.location.href='budgets.html'">Voltar</button>
+      <button type="button" class="btn-limpar">Limpar</button>
+      <button type="button" class="btn-alterar">Alterar</button>
+      <button type="submit" class="btn-login">Enviar</button>
     </div>
-    <button type="button" class="btn-voltar" onclick="window.location.href='budgets.html'">Voltar</button>
-    <button type="button" class="btn-limpar">Limpar</button>
-    <button type="button" class="btn-alterar">Alterar</button>
-    <button type="submit" class="btn-login" onclick="window.location.href='budgets.html'">Enviar</button> <!-- Alterar rota caso necessário -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
