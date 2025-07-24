@@ -60,6 +60,7 @@ main {
 .solicitacaoDeCompra {
   width: 100%;
   margin: 0 auto;
+  padding-top: 50px;
 }
 
 .solicitacaoDeCompra h2 {
@@ -84,13 +85,6 @@ main {
   margin-bottom: 10px;
 }
 
-.container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-
 .linha {
   display: flex;
   justify-content: space-around;
@@ -110,6 +104,10 @@ main {
   border: none;
 }
 
+.linha input[type="checkbox"] {
+  transform: scale(1.3);
+}
+
 .btn-voltar {
   padding: 10px;
   background-color: #403f41;
@@ -120,6 +118,7 @@ main {
   cursor: pointer;
   text-decoration: none;
   margin-bottom: 10px;
+  align-content: center;
 }
 
 .btn-voltar:hover {
@@ -171,6 +170,29 @@ main {
 }
 
 .btn-alterar:hover {
+  opacity: 0.9;
+}
+
+.botoes-rodape {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+  width: 100%;
+  max-width: 900px;
+}
+
+.botoes-rodape button {
+  min-width: 120px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease-in-out;
+}
+
+.botoes-rodape button:hover {
+  transform: scale(1.02);
   opacity: 0.9;
 }
 
